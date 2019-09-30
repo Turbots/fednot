@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fednot-frontend
+  labels:
+    app: fednot-frontend
+spec:
+  ports:
+    - name: http
+      port: 8080
+  selector:
+    app: fednot-frontend
